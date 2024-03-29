@@ -1,22 +1,20 @@
-Welcome to Lumache's documentation!
+MAGPIE: Mapping Areas of Genetic Parsimony In Epitopes
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+MAGPIE is a tool for analyzing thousands of protein-ligand interactions at once. MAGPIE generates an interactive 3D visualization from a set of protein complex structures that share a target ligand, as well as sequence logo-style frequency graphs that show all the amino acids from the set of protein binders that interact with user-selected target ligand positions. MAGPIE is compatible with small molecule or protein ligands.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+<a target="_blank" href="https://colab.research.google.com/github/glasgowlab/MAGPIE/blob/GoogleColab/MAGPIE_COLAB.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
-.. note::
 
-   This project is under active development.
-
-Contents
+I. Installing and Using MAGPIE
 --------
 
 .. toctree::
 
+   GoogleColab
+   Local-Version 
+   get_started
    usage
-   api
+   examples
