@@ -13,13 +13,13 @@ Contents:
    GoogleColab
    Local-Version
 
-I. Installing and Using MAGPIE via GoogleColab
+I. Using MAGPIE via GoogleColab
 ================================================
 
 .. toctree::
    :maxdepth: 1
 
-   GoogleColab/index
+   GoogleColab_instructions
 
 II. Installing and Using MAGPIE via Local-Version
 =================================================
@@ -27,4 +27,4 @@ II. Installing and Using MAGPIE via Local-Version
 .. toctree::
    :maxdepth: 1
 
-   Local-Version/index
+   LocalVersion_instructions
