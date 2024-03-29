@@ -1,30 +1,35 @@
 Using MAGPIE with Local-Version
-=================================
+================================
 
 The following are a set of command-line-centric instructions for installing
-pySCA on Linux, Windows, and macOS operating systems.
+the Local-Version of MAGPIE on Linux, Windows, and macOS operating systems.
 
 1. Install Dependencies
-=======================
+-----------------------
 
-Choose the set of instructions in this section based on your operating system.
 
-Linux (Ubuntu 18.04)
---------------------
+Linux 
+-----
 
 Before installing pySCA, install the following packages from your package
 repository:
 
-1) Python 3
-2) Pip
-3) GCC
+1. Python 3
+2. Pip
+3. GCC
 
 .. code-block:: bash
 
    sudo apt-get install python3 python3-pip git gcc
 
+Windows
+-------
+
+macOS
+-----
+
 2. Download Code
-================
+----------------
 
 The MAGPIE Local-Version package, tutorials, and associated scripts are available for download
 from the `GitHub repository <https://github.com/glasgowlab/MAGPIE>`_. There
@@ -33,18 +38,15 @@ are several options for doing so.
 A. Use Git
 ----------
 
-If you have :code:`git` installed on your system, you can use it to clone the
+If you have `git` installed on your system, you can use it to clone the
 repository from GitHub. 
 
 cd into the directory where you would like to download the code.
 From the command line, run:
 
-..code-block:: bash
-
-   cd /path/to/directory
-
 .. code-block:: bash
 
+   cd /path/to/directory
    git clone https://github.com/glasgowlab/MAGPIE.git
 
 The code will now be downloaded in a directory called `MAGPIE`.
@@ -53,13 +55,13 @@ B. (OR) Download from the Website
 ---------------------------------
 
 Though not recommended, you can also download the source code from the GitHub
-website. Click the green "Clone or download" tab pictured below to obtain the
+website. Click the green "Clone or download" tab to obtain the
 latest code.
 
 .. image:: _static/github-download-screenshot.png
 
-3. Getting Started with MAGPIE Local-Version 
-================
+3. Getting Started with MAGPIE Local-Version
+--------------------------------------------
 
 The Local-Version of MAGPIE is a standalone version of the MAGPIE code that can be run on a local machine.  
 
@@ -75,7 +77,7 @@ To activate the environment, run:
 
    conda activate magpie
 
-Running MAGPIE Local-Version requires installation of Jupyter notebooks. For more on how Jupyter notebooks work, see: `<https://jupyter.org>`_.
+Running MAGPIE Local-Version requires installation of Jupyter notebooks (1.0.0). For more on how Jupyter notebooks work, see: `<https://jupyter.org>`_.
 
 To install Jupyter notebooks, run the following command within your conda environment:
 
@@ -83,12 +85,21 @@ To install Jupyter notebooks, run the following command within your conda enviro
 
    pip install jupyter
 
+MAGPIE also requires the following Python packages and versions to run the local version, which can be downloaded via pip in your conda environment
+Numpy (1.18.5)
+Pandas (1.3.4)
+Matplotlib (3.4.3)
+Glob (0.7)
+Plotly (5.9.0)
+Spicy (1.7.1)
+
 To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and open the jupyter notebook via the following command:
 
 .. code-block:: bash
 
    cd /path/to/MAGPIE
-
-.. code-block:: bash
-    
    jupyter notebook
+
+This will open a jupyter notebook in your browser 
+
+.. image:: _static/github-download-screenshot.png
