@@ -5,7 +5,7 @@ The following are a set of command-line-centric instructions for installing
 the Local-Version of MAGPIE on Linux, Windows, and macOS operating systems.
 
 1. Install Dependencies
------------------------
+========================
 
 
 Linux 
@@ -29,7 +29,7 @@ macOS
 -----
 
 2. Download Code
-----------------
+================
 
 The MAGPIE Local-Version package, tutorials, and associated scripts are available for download
 from the `GitHub repository <https://github.com/glasgowlab/MAGPIE>`_. There
@@ -58,10 +58,10 @@ Though not recommended, you can also download the source code from the GitHub
 website. Click the green "Clone or download" tab to obtain the
 latest code.
 
-.. image:: _static/github-download-screenshot.png
+.. image:: _static/Github_download.png
 
 3. Getting Started with MAGPIE Local-Version
---------------------------------------------
+============================================
 
 The Local-Version of MAGPIE is a standalone version of the MAGPIE code that can be run on a local machine.  
 
@@ -93,13 +93,15 @@ Glob (0.7)
 Plotly (5.9.0)
 Spicy (1.7.1)
 
-To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and open the jupyter notebook via the following command:
+To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and switch to the Local-Version branch. Then open a Jupyter notebook by running the following command:
 
 .. code-block:: bash
 
    cd /path/to/MAGPIE
+   git checkout Local-Version
    jupyter notebook
 
 This will open a jupyter notebook in your browser 
 
-.. image:: _static/github-download-screenshot.png
+.. image:: _static/MAGPIE_Jupyter_nb.png
+
