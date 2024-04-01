@@ -93,7 +93,7 @@ To begin running the MAGPIE Local-Version, navigate to the directory where you d
 
 This will open a jupyter notebook in your browser 
 
-.. image:: source/images/MAGPIE_Jupyter_nb.png
+.. image:: _static/MAGPIE_Jupyter_nb.png
 
 **The Local-Version of MAGPIE can now be used on your local machine via Jupyter notebook.**
 
@@ -156,11 +156,11 @@ MAGPIE uses multiprocessing to multithread using CPUs. Unless you run the follow
 
 Running this cell will open a new window in your browser displaying the 3D viewer. This viewer will display the target ligand/protein and protein binder chains. Use the options on the top right of the window to zoom, pan, and rotate the 3D viewer (this can also be done with your mouse/trackpad). The dropdown menu on the top left of the screen allows you to color the 3D graph by Shapely colors, amino colors, H-bonds, and DBSCAN hotspots. Clicking "Binding Residues" or "Target" on the top right of the window allows you to hide or show the target or binding residues. 
 
-.. image:: source/images/COA_AA.png
+.. image:: _static/COA_AA.png
 
 If you are using the MAGPIE's DBSCAN capability a figure of the DBSCAN clusters will be displayed in the jupyter notebook
 
-.. image:: source/images/COA_clusters.png
+.. image:: _static/COA_clusters.png
 
 **4. Select target ligand residues or atoms to generate AA frequency graphs**
 
@@ -175,6 +175,6 @@ Run this cell if you are using the DBSCAN capability
 
 Run this cell to generate the AA frequency graphs for the target residues or heavy atoms. Check the box to only display the combined AA frequency graph.
 
-.. image:: source/images/COA_Freq.png
+.. image:: _static/COA_Freq.png
 
 **For a tutorial on how to use MAGPIE with user-uploaded datasets, please the 'Preparing your own dataset for use in MAGPIE' section of this documentation.**
