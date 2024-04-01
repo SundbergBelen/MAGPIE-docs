@@ -134,7 +134,7 @@ To run the small molecule example dataset, input 'Small molecule example/referen
 
 Upon running this cell, users will be asked to input the target chain, binding chain, whether the molecule is a small-molecule ligand (True or False), the distance to graph from the target chain in Angstroms, and whether to store the metadata. 
 
-To run the Protein Example dataset, input A for the target chain, C for the binding chain, and False for Is small-molecule ligand.
+For the small molecule target example, use B for the target chain and C for the protein binder chain, True for small molecule, and choose a RMSD threshold. 
 
 **3.1. Advanced Options**
 
