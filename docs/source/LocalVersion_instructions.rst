@@ -128,7 +128,7 @@ Each cell in the Jupyter notebook should be run in order. The notebook is divide
 
 Upon running this cell, the user will be asked to input a path to the cleaned dataset. The dataset will then be loaded into MAGPIE.
 
-To run the Protein Example dataset, input the path to this dataset. 
+To run the small molecule example dataset, input 'Small molecule example/reference_1' into the input box. This will load conformer pool 1 of the COA dataset.
 
 **2. Select target ligand and protein binder chains**
 
@@ -152,11 +152,21 @@ To run the DBSCAN feature of MAGPIE run the DBSCAN cells, choose the eps and min
 
 MAGPIE uses multiprocessing to multithread using CPUs. Unless you run the following cell, MAGPIE will use 1 thread.
 
+**3.2 Plot points in 3D Viewer**
+
+Running this cell will open a new window in your browser displaying the 3D viewer. This viewer will display the target ligand/protein and protein binder chains. Use the options on the top right of the window to zoom, pan, and rotate the 3D viewer (this can also be done with your mouse/trackpad). The dropdown menu on the top left of the screen allows you to color the 3D graph by Shapely colors, amino colors, H-bonds, and DBSCAN hotspots. Clicking "Binding Residues" or "Target" on the top right of the window allows you to hide or show the target or binding residues. 
+
+.. image:: _static/COA_AA.png
+
+If you are using the MAGPIE's DBSCAN capability a figure of the DBSCAN clusters will be displayed in the jupyter notebook
+
+.. image:: _static/COA_clusters.png
+
 **4. Select target ligand residues or atoms to generate AA frequency graphs**
 
-Enter the target residue indices or heavy atom names to graph. These should be separated by commas, without spaces (e.g., N1A,N3A,N9A). Ranges are allowed when working with protein-protein interactions (e.g., 127-131,146-149).
+Enter the target residue indices or heavy atom names to graph. These should be separated by commas, without spaces (e.g., N1A,N3A,N9A). Ranges are allowed when working with protein-protein interactions (e.g., 127-131,146-149). If there are no residues within the given range, the next cell will throw an error.
 
-If there are no residues within the given range, the next cell will throw an error.
+For this example, you can input N4P,N8P,N9A,N6A
 
 **4.2 Plot clusters (Optional):** 
 Run this cell if you are using the DBSCAN capability
@@ -164,5 +174,7 @@ Run this cell if you are using the DBSCAN capability
 **5. Generate AA frequency graphs**
 
 Run this cell to generate the AA frequency graphs for the target residues or heavy atoms. Check the box to only display the combined AA frequency graph.
+
+.. image:: _static/COA_Freq.png
 
 **For a tutorial on how to use MAGPIE with user-uploaded datasets, please the 'Preparing your own dataset for use in MAGPIE' section of this documentation.**
