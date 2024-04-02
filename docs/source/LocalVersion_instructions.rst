@@ -12,11 +12,10 @@ repository:
 
 1. Python 3
 2. Pip
-3. GCC **NEEDED???
 
-.. code-block:: bash
+Click `here <https://www.python.org/downloads/>`_ for more information on how to install Python
 
-   sudo apt-get install python3 python3-pip git gcc
+Python 3.4 and later include pip by default. Click `here <https://pip.pypa.io/en/stable/installation/>`_ for more information on how to install pip. 
 
 II. Download Code
 ================
@@ -55,11 +54,11 @@ III. Getting Started with MAGPIE Local-Version
 
 The Local-Version of MAGPIE is a standalone version of the MAGPIE code that can be run on a local machine.  
 
-It is always recommended that you create a conda environment for any project you are working on. This will help you to keep your dependencies separate from other projects. To create a new conda environment, run the following command:
+It is always recommended that you create a conda environment for any project you are working on. This will help you to keep your dependencies separate from other projects. To create a new conda environment with python 3.7 (for example), run the following command:
 
 .. code-block:: bash
 
-   conda create -n magpie python=3.7
+   conda create -n magpie python=37
 
 To activate the environment, run:
 
