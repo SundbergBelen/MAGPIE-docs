@@ -50,7 +50,7 @@ Check the box next to the small_molecule_ligand example to select this dataset. 
 
     3.3 Provide the distance in Angstroms to graph from the target chain. 
 
-    *MAGPIE uses DBSCAN to cluster points in 3D without requiring to specify the number of desired clusters.
+    *MAGPIE uses*  `DBSCAN <(https://www.dbs.ifi.lmu.de/Publikationen/Papers/KDD-96.final.frame.pdf)>`_  *to cluster points in 3D without requiring to specify the number of desired clusters (Optional).*
 
     *3.4 Optional:* To run the DBSCAN feature of MAGPIE run the DBSCAN cells, choose the eps and min_samples parameters, and run the DBSCAN cells.
 
