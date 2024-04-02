@@ -14,6 +14,10 @@ Description of helper scripts
 
 Tutorial
 ---------
+**0. Unzip the dataset**
+
+In this tutorial, we will process the the PDBs from the small_molecule_example dataset for use in MAGPIE. Unzip the provided dataset ("large_COA.zip"). 
+
 **1. Run** ``MAGPIE_input_prep.py``
 
  This helper script takes an input PDB file or directory of PDB files, an output directory, and identifying information about the protein binders and the target ligands. It outputs reformatted, renumbered PDB files in which the protein binder is on one chain and the target ligand is on another chain. The output files are found in the user-specified output directory with the suffix “_cleaned.pdb”.
@@ -24,13 +28,9 @@ Tutorial
 
 **2. Run align Protein Chain or Align Small Molecule scripts** 
 
-**A.**  ``align_protein_chain.py``
+We will use the ``align_small_molecule.py`` helper script for this tutorial. However, an example command line for the ``align_protein_chain.py`` script is also provided.
 
-The protein binders are aligned on the target ligand using ``align_protein_chain.py``. All structures are exported as individual PDB files. An RMSD threshold of 2.5 Angstroms is used here.
-
-NEED EXAMPLE CODE HERE
-
-**B.** ``align_small_molecule.py``
+**A.** ``align_small_molecule.py``
 
 The structures are then globally aligned on COA using ``align_small_molecule.py``. All structures are exported as individual PDB files.
 An RMSD threshold of 2.5 Angstroms is used here.
@@ -38,6 +38,16 @@ An RMSD threshold of 2.5 Angstroms is used here.
 .. code-block:: bash
 
     python ~/MAGPIE/align_small_molecule.py -c B -T 2.5 -i <input_directory> -o <output_directory> -p True
+
+**B.**  ``align_protein_chain.py``
+
+The protein binders can be aligned on the target ligand using ``align_protein_chain.py``. All structures are exported as individual PDB files. An RMSD threshold of 2.5 Angstroms is used here.
+
+.. code-block:: bash
+
+    python ~/MAGPIE/align_protein_chain.py -c B -T 2.5 -i <input_directory> -o <output_directory>
+
+*For more information on how to use the helper scripts and their arguments, see the supplementary information in the MAGPIE manuscript.*
 
 **3. Import aligned PDB files into MAGPIE GoogleColab**
 
