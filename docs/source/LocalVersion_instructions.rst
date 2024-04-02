@@ -15,7 +15,8 @@ repository:
 
 Click `here <https://www.python.org/downloads/>`_ for more information on how to install Python
 
-Python 3.4 and later include pip by default. Click `here <https://pip.pypa.io/en/stable/installation/>`_ for more information on how to install pip. 
+Click `here <https://pip.pypa.io/en/stable/installation/>`_ for more information on how to install pip. 
+
 
 II. Download Code
 ================
