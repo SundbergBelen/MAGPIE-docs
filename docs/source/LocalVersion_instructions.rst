@@ -140,7 +140,7 @@ For the small molecule target example, use B for the target chain and C for the 
 
 **Clustering**
 
-MAGPIE uses DBSCAN to cluster points in 3D without requiring to specify the number of desired clusters (Optional).
+  *MAGPIE uses*  `DBSCAN <(https://www.dbs.ifi.lmu.de/Publikationen/Papers/KDD-96.final.frame.pdf)>`_  *to cluster points in 3D without requiring to specify the number of desired clusters (Optional).*
 
 To run the DBSCAN feature of MAGPIE run the DBSCAN cells, choose the eps and min_samples parameters, and run the DBSCAN cells.
 
@@ -162,14 +162,13 @@ If you are using the MAGPIE's DBSCAN capability a figure of the DBSCAN clusters 
 
 .. image:: _static/COA_clusters.png
 
+Note: If you are using this jupyter notebook in an IDE (ie. VSCode, PyCharm, etc.) the 3D viewer will not display. Instead, an html file will be saved in the directory where the jupyter notebook is located. You can open this html file in your browser to view the 3D viewer.
+
 **4. Select target ligand residues or atoms to generate AA frequency graphs**
 
 Enter the target residue indices or heavy atom names to graph. These should be separated by commas, without spaces (e.g., N1A,N3A,N9A). Ranges are allowed when working with protein-protein interactions (e.g., 127-131,146-149). If there are no residues within the given range, the next cell will throw an error.
 
-For this example, you can input N4P,N8P,N9A,N6A
-
-**4.2 Plot clusters (Optional):** 
-Run this cell if you are using the DBSCAN capability
+For this tutorial, you can input N4P,N8P,N9A,N6A
 
 **5. Generate AA frequency graphs**
 
