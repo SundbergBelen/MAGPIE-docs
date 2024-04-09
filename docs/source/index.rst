@@ -21,7 +21,14 @@ I. Introduction
 
    Introduction
 
-II. Using MAGPIE via GoogleColab
+II. Inputs
+================================================
+.. toctree::
+   :maxdepth: 1
+
+   Inputs
+
+III. Using MAGPIE via GoogleColab
 ================================================
 
 .. toctree::
@@ -29,7 +36,7 @@ II. Using MAGPIE via GoogleColab
 
    GoogleColab_instructions
 
-III. Installing and Using MAGPIE via Local-Version
+IV. Installing and Using MAGPIE via Local-Version
 =================================================
 
 .. toctree::
@@ -37,10 +44,18 @@ III. Installing and Using MAGPIE via Local-Version
 
    LocalVersion_instructions
 
-IV. Preparing your own dataset for use in MAGPIE
+V. Preparing your own dataset for use in MAGPIE
 =================================================
 
 .. toctree::
    :maxdepth: 1
 
    Preparing_samples
+
+VI. Description of Helper scripts
+=================================================
+
+.. toctree::
+   :maxdepth: 1
+
+   HelperScripts

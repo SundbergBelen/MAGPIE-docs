@@ -37,7 +37,7 @@ From the command line, run:
 .. code-block:: bash
 
    cd /path/to/directory
-   git clone https://github.com/glasgowlab/MAGPIE.git
+   git clone -b local-version https://github.com/glasgowlab/MAGPIE.git
 
 The code will now be downloaded in a new directory called `MAGPIE`.
 
@@ -83,96 +83,136 @@ MAGPIE also requires the following Python packages and versions to run the local
    5. Plotly (5.9.0)
    6. Spicy (1.7.1)
 
-To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and switch to the Local-Version branch. Then open a Jupyter notebook. To do this, run the following commands:
+For example, to download the Pandas package with pip run: 
+
+.. code-block:: bash
+
+   pip install pandas
+
+To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and switch to the Local-Version branch (if you aren't already in that branch). Then open a Jupyter notebook. To do this, run the following commands:
 
 .. code-block:: bash
 
    cd /path/to/MAGPIE
-   git checkout Local-Version
+   git checkout local-version
    jupyter notebook
 
-This will open a jupyter notebook in your browser 
+This will open jupyter notebooks in your browser 
 
 .. image:: _static/MAGPIE_Jupyter_nb.png
 
+Click on the MAGPIE_LOCAL.ipynb file to open the local-version jupyter notebook in your browser.
+
 **The Local-Version of MAGPIE can now be used on your local machine via Jupyter notebook.**
 
+Required Inputs
+================
+For more detail on the required inputs for MAGPIE, see the "Required Inputs" section of this documentation.
 
-Local-Version tutorial with pre-loaded datasets
-===============================================
+Tutorial Introduction
+======================
+
 This tutorial will guide you through using MAGPIE with the Small molecule example dataset (case study #2). This dataset has already been cleaned, standardized, and aligned on the target ligand, and can be loaded directly into MAGPIE in Step 2.
 
 The coenzyme A (COA) dataset from case study #2 of `Rodriguez et al. 2023 <https://www.biorxiv.org/content/10.1101/2023.09.04.556273v2>`_ will be used in these tutorials. We used 199 structurally diverse bacterial enzymes that bind COA. We searched the PDB for structural models with refinement resolutions between 1.5 and 3 Å using its PubChem identifier code 87642. From this set of >600 structures, to reduce redundancy and noise in the dataset, we chose 199 models randomly. Using MAGPIE_input_prep.py with the small molecule target ligand name and mesh area search selection options, we removed all other chains that were not COA or the protein(s) bound/nearby to COA, including redundant protein and COA chains.
 
-Required inputs
----------------
-
-**PDB files:** these should be aligned on the target ligands. Two examples are provided on GitHub, one for protein-protein interactions and one for small molecule-protein interactions. If you choose to upload your own PDB files, you will first need to clean, standardize, and align input PDB files for seamless usage in MAGPIE
-
-**Target chain ID from PDB:** the program uses the first file in the directory to upload the target ligand structure.
-
-**Protein binder chain ID from PDB:** this chain identifier must be the same across all PDB files.
-
-**Target type:** indicate whether the target ligand is a small molecule or a protein.
-
-**Target residue index (for protein ligands) or unique atom names (for small molecule ligands):** provide the target residue indices for proteins or unique atom names for small molecules. Alternatively, you can input 'all' to consider all AAs/heavy atoms.
-
-Running the Local-Version Jupyter notebook
-------------------------------------------
+Local-Version tutorial with pre-loaded datasets
+===============================================
 
 Each cell in the Jupyter notebook should be run in order. The notebook is divided into sections, each of which performs a specific task.
 
-**0. Open the MAGPIE Local-Verison Jupyter notebook as described above**
-
-**1. Run required packages, then upload and process data**
+0. Open the MAGPIE Local-Verison Jupyter notebook as described above
+---------------------------------------------------------------------
+1. Run required packages, then upload and process data
+-------------------------------------------------------
 
 Upon running this cell, the user will be asked to input a path to the cleaned dataset. The dataset will then be loaded into MAGPIE.
 
 To run the small molecule example dataset, input 'Small molecule example/reference_1' into the input box. This will load conformer pool 1 of the COA dataset.
 
-**2. Select target ligand and protein binder chains**
+.. image:: _static/LV_1.png
+
+2. Select target ligand and protein binder chains
+--------------------------------------------------
 
 Upon running this cell, users will be asked to input the target chain, binding chain, whether the molecule is a small-molecule ligand (True or False), the distance to graph from the target chain in Angstroms, and whether to store the metadata. 
 
 For the small molecule target example, use B for the target chain and C for the protein binder chain, True for small molecule, and choose a RMSD threshold. 
 
-**3.1. Advanced Options**
+.. image:: _static/LV_2.png
+
+3.1. Advanced Options
+----------------------
 
 **Clustering**
 
-  *MAGPIE uses*  `DBSCAN <(https://www.dbs.ifi.lmu.de/Publikationen/Papers/KDD-96.final.frame.pdf)>`_  *to cluster points in 3D without requiring to specify the number of desired clusters (Optional).*
+*MAGPIE uses*  `DBSCAN <(https://www.dbs.ifi.lmu.de/Publikationen/Papers/KDD-96.final.frame.pdf)>`_  *to cluster points in 3D without requiring to specify the number of desired clusters (Optional).*
 
 To run the DBSCAN feature of MAGPIE run the DBSCAN cells, choose the eps and min_samples parameters, and run the DBSCAN cells.
 
     **eps:** The maximum distance between two samples for one to be considered as in the neighborhood of the other.
 
     **min_samples:** The number of samples (or total weight) in a neighborhood for a point to be considered as a core point. Default is eps = 2.0, min_samples = 15.
+   
+.. image:: _static/LV_3-1.png
 
 **Multithreading**
 
 MAGPIE uses multiprocessing to multithread using CPUs. Unless you run the following cell, MAGPIE will use 1 thread.
 
-**3.2 Plot points in 3D Viewer**
+.. image:: _static/LV_3-2.png
 
-Running this cell will open a new window in your browser displaying the 3D viewer. This viewer will display the target ligand/protein and protein binder chains. Use the options on the top right of the window to zoom, pan, and rotate the 3D viewer (this can also be done with your mouse/trackpad). The dropdown menu on the top left of the screen allows you to color the 3D graph by Shapely colors, amino colors, H-bonds, and DBSCAN hotspots. Clicking "Binding Residues" or "Target" on the top right of the window allows you to hide or show the target or binding residues. 
+3.2 Plot points in 3D Viewer
+-----------------------------
+
+Running this cell will open a new window in your browser displaying the 3D viewer. This viewer will display the target ligand/protein and protein binder chains.
+
+This might take a couple of minutes depending on the size of the dataset.
+
+Note: If you are using this jupyter notebook in an IDE (ie. VSCode, PyCharm, etc.) the 3D viewer will not display. Instead, an html file will be saved in the directory where the jupyter notebook is located. You can open this html file in your browser to view the 3D viewer.
 
 .. image:: _static/COA_AA.png
+*Example output of the 3D viewer showing Amino colors.*
+
+Use the options on the top right of the window to zoom, pan, and rotate the 3D viewer (this can also be done with your mouse/trackpad):
+
+.. image:: _static/GC_4_menu.png
+
+The dropdown menu on the top left of the screen allows you to color the 3D graph by Shapely colors, amino colors, Charge, H-bonds, and DBSCAN hotspots:
+
+.. image:: _static/LV_Hbonds.png
+*Example output of the 3D viewer showing Hydrogen bonds *yellow* and target molecule. Notice that the target molecule is colored by atom (the "Target" option on the right side of the screen is checked).*
+
+Unchecking the "Target" option will show the molecule as sticks (atom colors are hidden):
+
+.. image:: _static/LV_Hbonds2.png
+
+*It is also possible to hide the binding residues by unchecking the "Binding Residues" option or to hide the target molecule by unchecking "Target."*
+
+View the names of each atom in the small molecule by hovering over the atoms in the small molecule. Hovering over binding residues will show the residue name when viewing Shapely Colours, Amino Colors, Charge, and Hydrogen Bonds and show the cluster number when viewing DBSCAN Hotspots:
+
+.. image:: _static/LV_Charge.png
+*Example output of the 3D viewer showing charged residues.*
 
 If you are using the MAGPIE's DBSCAN capability a figure of the DBSCAN clusters will be displayed in the jupyter notebook
 
 .. image:: _static/COA_clusters.png
 
-Note: If you are using this jupyter notebook in an IDE (ie. VSCode, PyCharm, etc.) the 3D viewer will not display. Instead, an html file will be saved in the directory where the jupyter notebook is located. You can open this html file in your browser to view the 3D viewer.
-
-**4. Select target ligand residues or atoms to generate AA frequency graphs**
+4. Select target ligand residues or atoms to generate AA frequency graphs
+--------------------------------------------------------------------------
 
 Enter the target residue indices or heavy atom names to graph. These should be separated by commas, without spaces (e.g., N1A,N3A,N9A). Ranges are allowed when working with protein-protein interactions (e.g., 127-131,146-149). If there are no residues within the given range, the next cell will throw an error.
 
 For this tutorial, you can input N4P,N8P,N9A,N6A
 
-**5. Generate AA frequency graphs**
+.. image:: _static/LV_4.png
+
+5. Generate AA frequency graphs
+--------------------------------
 
 Run this cell to generate the AA frequency graphs for the target residues or heavy atoms. Check the box to only display the combined AA frequency graph.
+
+.. image:: _static/LV_5.png
 
 .. image:: _static/COA_Freq.png
 
