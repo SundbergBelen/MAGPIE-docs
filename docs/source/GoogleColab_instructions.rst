@@ -6,7 +6,7 @@ The `MAGPIE GoogleColab server <https://colab.research.google.com/github/glasgow
 
 Required Inputs
 ================
-For more detail on the required inputs for MAGPIE, see the "Required Inputs" section of this documentation.
+For more detail on the required inputs for MAGPIE, see the `Required Inputs <https://magpie-docs.readthedocs.io/en/latest/Inputs.html>`_ section of this documentation.
 
 Usage
 =======
@@ -17,7 +17,7 @@ Please execute the cells in numerical order. To execute a cell, click the play b
 Tutorial Introduction
 ======================
 
-Note: The PDB files in the pre-loaded dataset (used below in this tutorial) and the example user-uploaded dataset (in the "Preparing your own dataset for use in MAGPIE" section of this documentaiton) are the same. However, in the pre-loaded dataset tutorial here, the PDBs have already been pre-processed by the MAGPIE helper scripts, whereas in the user-uploaded dataset tutorial, you will learn how to pre-process the PDBs using the MAGPIE helper scripts.
+Note: The PDB files in the pre-loaded dataset (used below in this tutorial) and the example user-uploaded dataset (in the `Preparing your own dataset for use in MAGPIE <https://magpie-docs.readthedocs.io/en/latest/Preparing_samples.html>`_ section of this documentaiton) are the same. However, in the pre-loaded dataset tutorial here, the PDBs have already been pre-processed by the MAGPIE helper scripts, whereas in the user-uploaded dataset tutorial, you will learn how to pre-process the PDBs using the MAGPIE helper scripts.
 
 The coenzyme A (COA) dataset from case study #2 of `Rodriguez et al. 2023 <https://www.biorxiv.org/content/10.1101/2023.09.04.556273v2>`_ will be used in these tutorials. We used 199 structurally diverse bacterial enzymes that bind COA. We searched the PDB for structural models with refinement resolutions between 1.5 and 3 Å using its PubChem identifier code 87642. From this set of >600 structures, to reduce redundancy and noise in the dataset, we chose 199 models randomly. Using MAGPIE_input_prep.py with the small molecule target ligand name and mesh area search selection options, we removed all other chains that were not COA or the protein(s) bound/nearby to COA, including redundant protein and COA chains.
 

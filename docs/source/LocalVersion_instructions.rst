@@ -107,7 +107,7 @@ Click on the MAGPIE_LOCAL.ipynb file to open the local-version jupyter notebook 
 
 Required Inputs
 ================
-For more detail on the required inputs for MAGPIE, see the "Required Inputs" section of this documentation.
+For more detail on the required inputs for MAGPIE, see the `Required Inputs <https://magpie-docs.readthedocs.io/en/latest/Inputs.html>`_ section of this documentation.
 
 Tutorial Introduction
 ======================
@@ -216,4 +216,4 @@ Run this cell to generate the AA frequency graphs for the target residues or hea
 
 .. image:: _static/COA_Freq.png
 
-**For a tutorial on how to use MAGPIE with user-uploaded datasets, please the 'Preparing your own dataset for use in MAGPIE' section of this documentation.**
+**For a tutorial on how to use MAGPIE with user-uploaded datasets, please the** `Preparing your own dataset for use in MAGPIE <https://magpie-docs.readthedocs.io/en/latest/Preparing_samples.html>`_ **section of this documentation.**

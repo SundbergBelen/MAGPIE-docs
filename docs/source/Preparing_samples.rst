@@ -12,7 +12,7 @@ Overview of MAGPIE helper scripts
 
 ``align_small_molecule.py`` is an alignment script for structural models with target ligands that are small molecules. This alignment script will align the protein-ligand complexes on the target ligand for use with MAGPIE, returning subsets of complexes for small molecule ligands as determined by user-defined alpha carbon RMSD.
 
-**For more information on the arguments of each helper script see the "Helper Scripts" section of this documentation.**
+**For more information on the arguments of each helper script see the `Helper Scripts <https://magpie-docs.readthedocs.io/en/latest/HelperScripts.html>`_ section of this documentation.**
 
 Tutorial
 =========
