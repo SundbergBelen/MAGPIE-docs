@@ -77,16 +77,20 @@ Use the options on the top right of the window to zoom, pan, and rotate the 3D v
 
 The dropdown menu on the top left of the screen allows you to color the 3D graph by Shapely colors, amino colors, H-bonds, and DBSCAN hotspots:
 
-.. image:: _static/GC_4_Hbonds.png
+.. image:: _static/LV_Hbonds.png
 *Example output of the 3D viewer showing Hydrogen bonds and target molecule. Notice that the target molecule is colored by atom (the "Target" option on the right side of the screen is checked).*
 
 Unchecking the "Target" option will show the molecule as sticks (atom colors are hidden):
 
-.. image:: _static/GC_4_sticks.png
+.. image:: _static/LV_Hbonds2.png
 
 It is also possible to hide the binding residues by unchecking the "Binding Residues" option or to hide the targt molecule by unchecking "Target."
 
-View the names of each atom in the small molecule by hovering over the atoms in the small molecule. Hovering over binding residues will show the residue name when viewing Shapely Colours, Amino Colors, and Hydrogen Bonds and show the cluste rnumber when viewing DBSCAN Hotspots.
+View the names of each atom in the small molecule by hovering over the atoms in the small molecule. Hovering over binding residues will show the residue name when viewing Shapely Colours, Amino Colors, and Hydrogen Bonds and show the cluster number when viewing DBSCAN Hotspots.
+
+.. image:: _static/LV_Charge.png
+
+*Example output of the 3D viewer showing charged residues. Positively charged residues are shown in red; Negatively charged residues are shown in blue.*
 
 4.2 Plot clusters 
 ------------------
@@ -120,4 +124,4 @@ Unchecking the "combined" box will output:
 .. image:: _static/COA_Freq.png
 *Example combined frequency graph (residues in contact)*
 
-**For a tutorial on how to use MAGPIE with user-uploaded datasets, please the 'Preparing your own dataset for use in MAGPIE' section of this documentation.**
+**For a tutorial on how to use MAGPIE with user-uploaded datasets, please the** `Preparing your own dataset for use in MAGPIE <https://magpie-docs.readthedocs.io/en/latest/Preparing_samples.html>`_ **section of this documentation.**

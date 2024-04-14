@@ -192,7 +192,7 @@ Unchecking the "Target" option will show the molecule as sticks (atom colors are
 View the names of each atom in the small molecule by hovering over the atoms in the small molecule. Hovering over binding residues will show the residue name when viewing Shapely Colours, Amino Colors, Charge, and Hydrogen Bonds and show the cluster number when viewing DBSCAN Hotspots:
 
 .. image:: _static/LV_Charge.png
-*Example output of the 3D viewer showing charged residues.*
+*Example output of the 3D viewer showing charged residues. Positively charged residues are shown in red; Negatively charged residues are shown in blue.*
 
 If you are using the MAGPIE's DBSCAN capability a figure of the DBSCAN clusters will be displayed in the jupyter notebook
 

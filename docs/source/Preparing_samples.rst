@@ -12,7 +12,7 @@ Overview of MAGPIE helper scripts
 
 ``align_small_molecule.py`` is an alignment script for structural models with target ligands that are small molecules. This alignment script will align the protein-ligand complexes on the target ligand for use with MAGPIE, returning subsets of complexes for small molecule ligands as determined by user-defined alpha carbon RMSD.
 
-**For more information on the arguments of each helper script see the `Helper Scripts <https://magpie-docs.readthedocs.io/en/latest/HelperScripts.html>`_ section of this documentation.**
+**For more information on the arguments of each helper script see the** `Helper Scripts <https://magpie-docs.readthedocs.io/en/latest/HelperScripts.html>`_ **section of this documentation.**
 
 Tutorial
 =========
@@ -92,7 +92,7 @@ Click the three dots on the right side of the file "temp" to upload the zip file
 
 *It is also posible to directly upload the PDB files into the temp folder, but this might take a long time depending on the number of files.*
 
-**3.4** Proceed to run the rest of the jupyter notebook as described in the MAGPIE GoogleColab tutorial.
+**3.4** Proceed to run the rest of the jupyter notebook as described in the `MAGPIE GoogleColab tutorial <https://magpie-docs.readthedocs.io/en/latest/GoogleColab_instructions.html>`_.
 
 **B. Local-Version**
 
@@ -115,5 +115,5 @@ Click on the MAGPIE_LOCAL.ipynb file to open the MAGPIE local-version jupyter no
 
 .. image:: _static/Upload_tut_3.png
 
-**3.3.** Proceed to run the rest of the jupyter notebook as described in the MAGPIE Local-Version tutorial.
+**3.3.** Proceed to run the rest of the jupyter notebook as described in the `MAGPIE Local-Version tutorial <https://magpie-docs.readthedocs.io/en/latest/LocalVersion_instructions.html>`_.
 
