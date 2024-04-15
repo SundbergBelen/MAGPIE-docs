@@ -4,7 +4,78 @@ Using the MAGPIE GUI
 
 I. Run the MAGPIE GUI via the GUI server
 ======================================
-instructions
+
+0. Open the MAGPIE GUI server `here <https://magpie-production.up.railway.app/>`_.
+------------------------------------------------------------------------------------
+
+Click the button to start uploading your data to the GUI server: 
+
+.. image:: _static/GUI_start.png
+
+1. Upload a zipfile containing the PDBs to be MAGPIED
+-------------------------------------------------------
+
+.. image:: _static/GUI_1.png
+
+2. MAGPIE input Prep
+--------------------------------------
+
+**Enter values to perform the input prep including binder sequence, binder fasta file, and binder chains. It is also possible to rename your binder chain:**
+
+.. image:: _static/GUI_2-1.png
+   
+
+**Select whether your target is a protein or small molecule:**
+
+.. image:: _static/GUI_2-2.png
+
+*If desired, toggle the switch to show advanced options:*
+
+.. image:: _static/GUI_2-3.png
+
+For more information on advanced options, see the supplementary material in the MAGPIE paper: `Rodriguez et al. 2021 <https://doi.org/10.1101/2021.06.29.450229>`_.
+
+A. Enter target small molecule information:
+--------------------------------------------
+
+.. image:: _static/GUI_2_A1.png
+
+*If desired, toggle the switch to show advanced options:*
+
+B. Enter target protein information:
+-------------------------------------
+
+.. image:: _static/GUI_2_B1.png
+
+*If desired, toggle the switch to show advanced options:*
+
+**Click the RUN MAGPIE INPUT PREP button:**
+
+.. image:: _static/GUI_run2.png
+
+3. Molecule alignment or Protein alignment: 
+--------------------------------------------
+
+A. Enter values to perform small alignment and clustering:
+----------------------------------------------------------
+
+.. image:: _static/GUI_3_A1.png
+
+B. Enter values to perform protein alignment and clustering:
+--------------------------------------------------------------
+
+.. image:: _static/GUI_3_B1.png
+
+
+4. MAGPIE it!
+--------------
+
+.. image:: _static/GUI_4.png
+
+**Click the Plot points in 3D viewer button:**
+
+.. image:: _static/GUI_run4.png
+
 
 II. Running the MAGPIE GUI on your local machine
 ======================================
