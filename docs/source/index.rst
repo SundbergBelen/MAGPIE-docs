@@ -44,7 +44,15 @@ IV. Installing and Using MAGPIE via Local-Version
 
    LocalVersion_instructions
 
-V. Preparing your own dataset for use in MAGPIE
+V. Using the MAGPIE GUI
+=================================================
+
+.. toctree::
+   :maxdepth: 1
+
+   GUI_Instructions
+
+VI. Preparing your own dataset for use in MAGPIE
 =================================================
 
 .. toctree::
@@ -52,7 +60,7 @@ V. Preparing your own dataset for use in MAGPIE
 
    Preparing_samples
 
-VI. Description of Helper scripts
+VII. Description of Helper scripts
 =================================================
 
 .. toctree::
