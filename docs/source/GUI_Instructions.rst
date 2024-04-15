@@ -28,7 +28,7 @@ A. Run the MAGPIE GUI server locally without an executable:
     conda env create -f environment.yml
     conda activate MAGPE_GUI
    
-2. Run the MAGPIE GUI server locally: 
+2. Run the MAGPIE GUI server locally
 --------------------------------
 
 .. code-block:: bash
@@ -37,7 +37,7 @@ A. Run the MAGPIE GUI server locally without an executable:
 
 Once downloaded, run the GUI executable (.exe file). A terminal should appear and your web browser should open to the GUI. Once both are opened, the GUI is ready to use. All files it creates will be in the current working directory in which the .exe file was opened.
 
-B. Download and run the MAGPIE GUI via an executable
+B. Download and run the MAGPIE GUI via an executable:
 ---------------------------------------------------
 1. Set up the MAGPIE GUI environment
 -------------------------------------
