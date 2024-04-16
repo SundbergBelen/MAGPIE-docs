@@ -55,17 +55,15 @@ III. Getting Started with MAGPIE Local-Version
 
 The Local-Version of MAGPIE is a standalone version of the MAGPIE code that can be run on a local machine.  
 
-It is always recommended that you create a conda environment for any project you are working on. This will help you to keep your dependencies separate from other projects. To create a new conda environment with python 3.7 (for example), run the following command:
+It is always recommended that you create a conda environment for any project you are working on. This will help you to keep your dependencies separate from other projects. To create a new conda environment, run the following command:
 
 .. code-block:: bash
 
-   conda create -n magpie python=37
+   cd /path/to/MAGPIE
+   conda env create -f environment.yml
+   conda activate MAGPE_local
 
-To activate the environment, run:
-
-.. code-block:: bash
-
-   conda activate magpie
+The environment.yml file will download the required packages for MAGPIE into your new environment.
 
 Running MAGPIE Local-Version requires installation of Jupyter notebooks (1.0.0). For more on how Jupyter notebooks work, see: `<https://jupyter.org>`_.
 
@@ -74,20 +72,6 @@ To install Jupyter notebooks, run the following command within your conda enviro
 .. code-block:: bash
 
    pip install jupyter
-
-MAGPIE also requires the following Python packages and versions to run the local version, which can be downloaded via pip in your conda environment:
-   1. Numpy (1.18.5)
-   2. Pandas (1.3.4)
-   3. Matplotlib (3.4.3)
-   4. Glob (0.7)
-   5. Plotly (5.9.0)
-   6. Spicy (1.7.1)
-
-For example, to download the Pandas package with pip run: 
-
-.. code-block:: bash
-
-   pip install pandas
 
 To begin running the MAGPIE Local-Version, navigate to the directory where you downloaded the code and switch to the Local-Version branch (if you aren't already in that branch). Then open a Jupyter notebook. To do this, run the following commands:
 

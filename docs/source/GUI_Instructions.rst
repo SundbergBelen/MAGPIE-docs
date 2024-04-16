@@ -76,6 +76,26 @@ B. Enter values to perform protein alignment and clustering:
 
 .. image:: _static/GUI_run4.png
 
+*Example DBSCAN cluster output*
+
+.. image:: _static/GUI_cluster.png
+
+*Example 3D viewer output*
+
+.. image:: _static/GUI_3D.png 
+
+To toggle between 3D viewer settings (Shapely colors, amino colors, H-bonds, charged residues, and DBSCAN hotspots): 
+
+.. image:: _static/GUI_options1.png
+
+To toggle between molecule views: 
+
+.. image:: _static/GUI_options2.png
+
+Download data: 
+ 
+.. image:: _static/GUI_download.png
+
 
 II. Running the MAGPIE GUI on your local machine
 ======================================
