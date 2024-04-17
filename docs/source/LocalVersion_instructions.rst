@@ -4,21 +4,8 @@ Using MAGPIE with Local-Version
 
 The Local-Version of MAGPIE can be downloaded from github and run on a local machine. This version of MAGPIE is recommended for users who wish to keep their data private, or have >1000 input PDB files. The Local-Version of MAGPIE requires the user to have Python 3 installed on their machine, as well as the following Python packages: Numpy (1.18.5), Pandas (1.3.4), Matplotlib (3.4.3), Glob (0.7), Plotly (5.9.0), and Spicy (1.7.1). The Local-Version of MAGPIE can be downloaded from the `MAGPIE Github repository <https://github.com/glasgowlab/MAGPIE/tree/local-version>`_.
 
-I. Install Dependencies
-========================
 
-Before installing MAGPIE, install the following packages from your package
-repository:
-
-1. Python 3
-2. Pip
-
-Click `here <https://www.python.org/downloads/>`_ for more information on how to install Python
-
-Click `here <https://pip.pypa.io/en/stable/installation/>`_ for more information on how to install pip. 
-
-
-II. Download Code
+I. Download Code
 ================
 
 The MAGPIE Local-Version package, tutorials, and associated scripts are available for download
@@ -50,7 +37,7 @@ latest code.
 
 .. image:: _static/Github_download.png
 
-III. Getting Started with MAGPIE Local-Version
+II. Getting Started with MAGPIE Local-Version
 ============================================
 
 The Local-Version of MAGPIE is a standalone version of the MAGPIE code that can be run on a local machine.  
