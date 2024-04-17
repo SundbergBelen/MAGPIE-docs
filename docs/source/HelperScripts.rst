@@ -168,3 +168,30 @@ Example
 .. code-block:: bash
 
     python ~/MAGPIE/align_small_molecule.py -c B -T 2.5 -i <input_directory> -o <output_directory> -p True
+
+IV. ``MAGPIE_protein_relax.py``
+==============================
+Because most structural models are not pre-optimized for analysis by the Rosetta energy function when they are deposited in the PDB, we provide an optional Python helper script for relaxing the structures to do interface energy calculations. The script relies on PyRosetta, an optional MAGPIE dependency. As input, it takes a folder of structural models. As output, it produces relaxed models in an output folder (with the suffix _relaxed.pdb). The user can optionally provide a thread number for the job. This script, MAGPIE_protein_relax.py, is available in the MAGPIE local Github repository. We recommend running it in the MAGPIE Conda environment described in section 11.
+
+Usage
+------
+MAGPIE_protein_relax.py [-h] -i INPUT_PATH -o OUTPUT_PATH -n THREADS
+
+Argument definitions
+---------------------
+1. -h, --help            show this help message and exit
+
+2. -i INPUT_PATH, --input_path INPUT_PATH
+                        path of the input directory
+
+3.  -o OUTPUT_PATH, --output_path OUTPUT_PATH
+                        path of the output directory
+
+4. -n THREADS, --threads THREADS
+                        	   number of threads to use. Default: 1
+
+Example
+--------
+.. code-block:: bash
+
+    python MAGPIE_protein_relax.py -i input -o relaxed_outputs -n 1
