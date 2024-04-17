@@ -3,7 +3,7 @@ Using the MAGPIE GUI
 ================================
 
 I. Run the MAGPIE GUI via the GUI server
-======================================
+========================================
 
 0. Open the MAGPIE GUI server `here <https://magpie-production.up.railway.app/>`_.
 ------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ Download data:
 
 
 II. Running the MAGPIE GUI on your local machine
-======================================
+================================================
 
 MAGPIE is also available for use as a `GUI <https://magpie-production.up.railway.app/>`_. Like the Local-Version of MAGPIE, the MAGPIE GUI can be run on your local machine. The GUI branch releases contain an appropriate executable for Windows, Mac, or linux. If the user would rather create a Conda environment to either build their own executable via pyinstaller or run the GUI via python ./server_local, that is also possible. 
 
@@ -128,8 +128,12 @@ A. Run the MAGPIE GUI server locally without an executable:
 
 Once downloaded, run the GUI executable (.exe file). A terminal should appear and your web browser should open to the GUI. Once both are opened, the GUI is ready to use. All files it creates will be in the current working directory in which the .exe file was opened.
 
-B. Download and run the MAGPIE GUI via an executable:
+B. Run the MAGPIE GUI via an executable:
 ---------------------------------------------------
+To run the MAGPIE GUI via an exectutable click this `link <https://github.com/glasgowlab/MAGPIE/releases>`_ to download the executable.
+
+C. Build your own MAGPIE executable: 
+-------------------------------------
 1. Set up the MAGPIE GUI environment
 -------------------------------------
 
