@@ -5,7 +5,7 @@ Using the MAGPIE GUI
 I. Running the MAGPIE GUI on your local machine
 ================================================
 
-MAGPIE is available for use as a `GUI <https://magpie-production.up.railway.app/>`_. Like the Local-Version of MAGPIE, the MAGPIE GUI can be run on your local machine.
+MAGPIE is available for use as a GUI. Like the Local-Version of MAGPIE, the MAGPIE GUI can be run on your local machine.
 
 Click `here <https://github.com/glasgowlab/MAGPIE/tree/GUI>`_ to navigate to the MAGPIE GUI branch on github.
 
