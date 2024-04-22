@@ -2,13 +2,41 @@
 Using the MAGPIE GUI
 ================================
 
-I. Run the MAGPIE GUI via the GUI server
+I. Running the MAGPIE GUI on your local machine
+================================================
+
+MAGPIE is available for use as a `GUI <https://magpie-production.up.railway.app/>`_. Like the Local-Version of MAGPIE, the MAGPIE GUI can be run on your local machine.
+
+Click `here <https://github.com/glasgowlab/MAGPIE/tree/GUI>`_ to navigate to the MAGPIE GUI branch on github.
+
+A. Run the MAGPIE GUI server locally: 
+--------------------------------------------------------
+1. Set up the MAGPIE GUI environment
+--------------------------------------
+
+.. code-block:: bash
+
+    git clone git@github.com:glasgowlab/MAGPIE.git
+    cd MAGPIE
+    git checkout GUI
+    conda env create -f environment.yml
+    conda activate MAGPE_GUI
+   
+2. Run the MAGPIE GUI server locally
+--------------------------------
+
+.. code-block:: bash
+
+    python server_local.py
+
+The GUI will be opened in your web browser and is ready to use. All files it creates will be in the current working directory.
+
+
+I. Getting Started with the MAGPIE GUI
 ========================================
 
-0. Open the MAGPIE GUI server `here <https://magpie-production.up.railway.app/>`_.
+0. Click the button to start uploading your data to the GUI server: 
 ------------------------------------------------------------------------------------
-
-Click the button to start uploading your data to the GUI server: 
 
 .. image:: _static/GUI_start.png
 
@@ -96,35 +124,6 @@ Download data:
  
 .. image:: _static/GUI_download.png
 
-
-II. Running the MAGPIE GUI on your local machine
-================================================
-
-MAGPIE is also available for use as a `GUI <https://magpie-production.up.railway.app/>`_. Like the Local-Version of MAGPIE, the MAGPIE GUI can be run on your local machine.
-
-Click `here <https://github.com/glasgowlab/MAGPIE/tree/GUI>`_ to navigate to the MAGPIE GUI branch on github.
-
-A. Run the MAGPIE GUI server locally: 
---------------------------------------------------------
-1. Set up the MAGPIE GUI environment
---------------------------------------
-
-.. code-block:: bash
-
-    git clone git@github.com:glasgowlab/MAGPIE.git
-    cd MAGPIE
-    git checkout GUI
-    conda env create -f environment.yml
-    conda activate MAGPE_GUI
-   
-2. Run the MAGPIE GUI server locally
---------------------------------
-
-.. code-block:: bash
-
-    python server_local.py
-
-The GUI will be opened in your web browser and is ready to use. All files it creates will be in the current working directory.
 
 
 
