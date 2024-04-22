@@ -9,8 +9,6 @@ MAGPIE is available for use as a `GUI <https://magpie-production.up.railway.app/
 
 Click `here <https://github.com/glasgowlab/MAGPIE/tree/GUI>`_ to navigate to the MAGPIE GUI branch on github.
 
-A. Run the MAGPIE GUI server locally: 
---------------------------------------------------------
 1. Set up the MAGPIE GUI environment
 --------------------------------------
 
